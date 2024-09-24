@@ -1,0 +1,15 @@
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .menu-link:hover {
+    color: #38bdf8;
+    transform: scale(1.1);
+  }
+  .glow-effect {
+    color: white;
+    text-shadow: 0 0 10px #38bdf8;
+  }
