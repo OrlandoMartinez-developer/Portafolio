@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orlando Martinez - Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .sidebar:hover {
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+    
+    .glow-effect {
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+    
+    .button-glow:hover {
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    }
+
+    .menu-link:hover {
+      color: #38bdf8;
+      transform: scale(1.1);
+    }
+
+    /* Botón para volver al inicio */
+    #back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      background-color: #38bdf8;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    #back-to-top:hover {
+      background-color: #1da1f2;
+    }
+
+    /* Barra lateral fija */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20%; /* Ajusta el ancho según sea necesario */
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    /* Aumentar el margen izquierdo del contenido principal para evitar que quede debajo de la barra */
+    .main-content {
+      margin-left: 20%; /* Debe coincidir con el ancho de la barra lateral */
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar fija -->
+  <div class="sidebar bg-black text-white flex flex-col items-center py-10 transition-all duration-500">
+    <div class="mb-8 text-center">
+      <div class="text-6xl font-extrabold glow-effect mb-2">O</div>
+      <div class="text-lg">Orlando Martinez</div>
+      <div class="text-sm text-gray-400">Web Developer</div>
+    </div>
+
+    <!-- Menú vertical -->
+    <nav class="space-y-4 text-lg font-medium flex flex-col items-center">
+      <a href="#about" class="menu-link transition duration-300">About</a>
+      <a href="#skills" class="menu-link transition duration-300">My Skills</a>
+      <a href="#work" class="menu-link transition duration-300">Work</a>
+      <a href="#contact" class="menu-link transition duration-300">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content text-white space-y-24">
+
+    <!-- Sección About -->
+    <section id="about" class="min-h-screen">
+      <h2 class="text-7xl font-bold mb-6">Hi, I’m <span class="text-teal-400 glow-effect">Orlando</span>, web developer</h2>
+      <p class="text-2xl text-gray-400 mb-8">
+        I am Orlando Martinez, a passionate student of Systems Engineering from the Dominican Republic. 
+        I specialize in front-end development and aim to combine creativity with technical skills to build efficient, 
+        user-friendly web applications. Currently, I am focused on enhancing my expertise in JavaScript frameworks development.
+      </p>
+    </section>
+
+    <!-- Sección My Skills -->
+<section id="skills" class="min-h-screen">
+    <h2 class="text-5xl font-bold mb-6">My Skills</h2>
+    <p class="text-xl text-gray-400 mb-6">I specialize in HTML, CSS, JavaScript, React, and WordPress development.</p>
+    
+    <div class="flex flex-wrap justify-center space-x-4">
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/html-5.png" alt="HTML" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/css-3.png" alt="CSS" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/js.png" alt="JavaScript" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/python.png" alt="Python" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/react.png" alt="React" class="w-8 h-8" />
+      </div>
+    <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+      <img src="./public/assets/icons/electron.png" alt="Electron" class="w-8 h-8" />
+    </div>
+    <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/angular.png" alt="Angular" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/git.png" alt="Git" class="w-8 h-8" />
+      </div>
+    <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+      <img src="./public/assets/icons/mysql.png" alt="MYSQL" class="w-8 h-8" />
+    </div>
+    <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/nodejs.png" alt="Node" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/bootstrap.png" alt="Bootstrap" class="w-8 h-8" />
+      </div>
+      <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        <img src="./public/assets/icons/tailwind.png" alt="tailwind" class="w-8 h-8" />
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Sección My Work -->
+<section id="work" class="min-h-screen">
+    <h2 class="text-5xl font-bold mb-6">My Work</h2>
+    <p class="text-xl text-gray-400 mb-6">I have worked on various projects ranging from small business websites to complex web applications.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Carta del Proyecto 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./public/assets/img/Oragnizador.png" alt="Proyecto 1" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold">Nombre del Proyecto 1</h3>
+          <p class="text-gray-600 mt-2">Organizador de Archivos es una aplicación de escritorio desarrollada en Electron.js que permite a los usuarios organizar archivos en un directorio especificado.
+</p>
+          <div class="mt-4 flex space-x-4">
+            <a href="https://github.com/OrlandoMartinez-developer/Organizador" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+            <a href="enlace-a-proyecto1" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carta del Proyecto 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="ruta-a-imagen-proyecto2.jpg" alt="Proyecto 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold">Nombre del Proyecto 2</h3>
+          <p class="text-gray-600 mt-2">Descripción breve del proyecto, incluyendo tecnologías utilizadas y objetivos.</p>
+          <div class="mt-4 flex space-x-4">
+            <a href="enlace-a-github-proyecto2" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+            <a href="enlace-a-proyecto2" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="ruta-a-imagen-proyecto2.jpg" alt="Proyecto 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold">Nombre del Proyecto 3</h3>
+          <p class="text-gray-600 mt-2">Descripción breve del proyecto, incluyendo tecnologías utilizadas y objetivos.</p>
+          <div class="mt-4 flex space-x-4">
+            <a href="enlace-a-github-proyecto2" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+            <a href="enlace-a-proyecto2" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="ruta-a-imagen-proyecto2.jpg" alt="Proyecto 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold">Nombre del Proyecto 4</h3>
+          <p class="text-gray-600 mt-2">Descripción breve del proyecto, incluyendo tecnologías utilizadas y objetivos.</p>
+          <div class="mt-4 flex space-x-4">
+            <a href="enlace-a-github-proyecto2" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+            <a href="enlace-a-proyecto2" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="ruta-a-imagen-proyecto2.jpg" alt="Proyecto 2" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold">Nombre del Proyecto 5</h3>
+          <p class="text-gray-600 mt-2">Descripción breve del proyecto, incluyendo tecnologías utilizadas y objetivos.</p>
+          <div class="mt-4 flex space-x-4">
+            <a href="enlace-a-github-proyecto2" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">GitHub</a>
+            <a href="enlace-a-proyecto2" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Sección Contact -->
+<section id="contact" class="min-h-screen">
+    <h2 class="text-5xl font-bold mb-4">Contact Me</h2>
+    <p class="text-xl text-gray-400 mb-4">You can reach me at <a href="mailto:orlando@example.com" class="text-teal-400">orlando@example.com</a>.</p>
+    <button class="button-glow bg-teal-400 text-black py-2 px-4 rounded-full font-semibold hover:bg-teal-600 transition duration-300 mb-4">
+      Contact me!
+    </button>
+  
+    <!-- Formulario de contacto -->
+    <form action="mailto:orlando@example.com" method="post" enctype="text/plain" class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto">
+      <div class="mb-3">
+        <label for="name" class="block text-gray-700 text-sm">Name:</label>
+        <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 text-sm" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="block text-gray-700 text-sm">Email:</label>
+        <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 text-sm" />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="block text-gray-700 text-sm">Message:</label>
+        <textarea id="message" name="message" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 text-sm text-black" rows="4"></textarea>
+      </div>
+      <button type="submit" class="bg-teal-400 text-white py-2 px-4 rounded-full hover:bg-teal-600 transition duration-300 text-sm">Send Message</button>
+    </form>
+  
+    <!-- Redes sociales -->
+    <div class="mt-4 flex justify-center space-x-3">
+      <a href="https://twitter.com/tu_usuario" target="_blank" class="text-gray-600 hover:text-teal-400 transition duration-300">
+        <img src="ruta-a-icono-twitter.png" alt="Twitter" class="w-6 h-6" />
+      </a>
+      <a href="https://github.com/tu_usuario" target="_blank" class="text-gray-600 hover:text-teal-400 transition duration-300">
+        <img src="ruta-a-icono-github.png" alt="GitHub" class="w-6 h-6" />
+      </a>
+      <a href="https://linkedin.com/in/tu_usuario" target="_blank" class="text-gray-600 hover:text-teal-400 transition duration-300">
+        <img src="ruta-a-icono-linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+      </a>
+      <!-- Añade más iconos de redes sociales aquí -->
+    </div>
+  </section>
+  
+  
+  
+
+  </div>
+
+  <!-- Botón Volver al Inicio -->
+  <div id="back-to-top" onclick="scrollToTop()">Top</div>
+
+  <script>
+    // Mostrar el botón cuando el usuario se desplaza hacia abajo
+    window.onscroll = function() {
+      const topButton = document.getElementById("back-to-top");
+      if (document.documentElement.scrollTop > 300) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    };
+
+    // Función para volver al inicio
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+</body>
+</html>
