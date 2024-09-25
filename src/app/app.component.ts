@@ -6,6 +6,7 @@ import { WorkComponent } from "./components/work/work.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { ContactComponent } from "./components/contact/contact.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
